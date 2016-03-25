@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app"
+<head>
+  <meta charset="UTF-8">
+  <script src="./node_modules/angular/angular.min.js"></script>
+
+  <script src="harry.js"></script>
+
+  <title>Harry Potter</title>
+</head>
+
+<body ng-controller="harryCal">
+  <div class="container">
+
+  <h2>Harry Potter</h2>
+
+    <table>
+    <tr>
+      <td ng-repeat ="data in book">
+        <img ng-src="./img/{{data.img}}" width="70%" height="auto"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td ng-repeat ="data in book">
+        {{data.name}}  </br>
+        ราคา : {{data.price}} ฿
+        <button ng-click ="add(data)" type="button"> add </button>
+      </td>
+    </tr>
+    </table>
+
+    <table>
+      <tr ng-repeat ="list in booksList track by $index">
+        <td>
+          {{list.name}} จำนวนเล่ม : {{list.amount}}
+          <button ng-click ="del($index)" type="button"> delete </button>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          {{total}} : {{cal}}
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+
+</body>
+</html>
