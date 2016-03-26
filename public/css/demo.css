@@ -16,22 +16,22 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: #fff;
-	color: #606871;
+	background: #D8D8D8;
+	color: #0B243B;
 	font-weight: 500;
 	font-size: 1.05em;
 	font-family: 'Raleway', Arial, sans-serif;
 }
 .size{
 	width : auto;
-	height: 270px;
+	height: 200px;
 	margin: 10px;
 	margin-right: 35px;
 }
 a {
 	outline: none;
 	color: #96bbe5;
-	text-decoration: none;
+	text-decoration: none;	
 }
 
 a:hover, a:focus,
@@ -73,7 +73,9 @@ a:hover, a:focus,
 
 /* Header */
 .codrops-header {
-	padding: 3em 190px 2em;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
 	letter-spacing: -1px;
 }
 
@@ -204,8 +206,8 @@ a:hover, a:focus,
 }
 
 .dummy-grid--filled {
-	padding: 2.5em 2em;
-	background: rgba(255, 255, 255, 0.1);
+	padding: 1em 1em;
+	background: #D8D8D8;
 }
 
 .dummy-grid--sidebar {
