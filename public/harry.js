@@ -57,6 +57,7 @@ angular.module('app', [])
     $scope.amount = []
     var check = 0
     $scope.total = 0
+    $scope.discount = 0
 
     $scope.add = function (list) {
       if ($scope.check(list)) {

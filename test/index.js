@@ -35,7 +35,7 @@ describe('TEST Buy Harry Potter Book', function () {
         .click('#b2')
         .evaluate(function () {
           this.price = document.querySelector('#discountTotal').innerHTML
-          return this.price.substr(2, this.price.length - 1)
+          return this.price
         })
       case1.should.equal('20')
     })
@@ -53,7 +53,7 @@ describe('TEST Buy Harry Potter Book', function () {
         .wait(1000)
         .evaluate(function () {
           this.price = document.querySelector('#discountTotal').innerHTML
-          return this.price.substr(2, this.price.length - 1)
+          return this.price
         })
       case2.should.equal('60')
     })
@@ -77,7 +77,7 @@ describe('TEST Buy Harry Potter Book', function () {
         .click('#b5')
         .evaluate(function () {
           this.price = document.querySelector('#discountTotal').innerHTML
-          return this.price.substr(2, this.price.length - 1)
+          return this.price
         })
       case3.should.equal('200')
     })
@@ -102,7 +102,7 @@ describe('TEST Buy Harry Potter Book', function () {
         .click('#b1')
         .evaluate(function () {
           this.price = document.querySelector('#discountTotal').innerHTML
-          return this.price.substr(2, this.price.length - 1)
+          return this.price
         })
       case4.should.equal('220')
     })
