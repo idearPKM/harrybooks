@@ -7,43 +7,50 @@ angular.module('app', [])
         name: 'แฮร์รี่ พอตเตอร์ เล่ม1',
         price: 100,
         img: 'hr1.jpg',
-      amount: 1},
+        amount: 1
+      },
       {
         id: 2,
         name: 'แฮร์รี่ พอตเตอร์ เล่ม2',
         price: 100,
         img: 'hr2.jpg',
-      amount: 1},
+        amount: 1
+      },
       {
         id: 3,
         name: 'แฮร์รี่ พอตเตอร์ เล่ม3',
         price: 100,
         img: 'hr3.jpg',
-      amount: 1},
+        amount: 1
+      },
       {
         id: 4,
         name: 'แฮร์รี่ พอตเตอร์ เล่ม4',
         price: 100,
         img: 'hr4.jpg',
-      amount: 1},
+        amount: 1
+      },
       {
         id: 5,
         name: 'แฮร์รี่ พอตเตอร์ เล่ม5',
         price: 100,
         img: 'hr5.jpg',
-      amount: 1},
+        amount: 1
+      },
       {
         id: 6,
         name: 'แฮร์รี่ พอตเตอร์ เล่ม6',
         price: 100,
         img: 'hr6.jpg',
-      amount: 1},
+        amount: 1
+      },
       {
         id: 7,
         name: 'แฮร์รี่ พอตเตอร์ เล่ม7',
         price: 100,
         img: 'hr7.jpg',
-      amount: 1}
+        amount: 1
+      }
     ]
 
     $scope.booksList = []
@@ -86,7 +93,6 @@ angular.module('app', [])
     function discount (data) {
       $scope.discount = 0
       var countbook = 0
-      var max = 0
       for (var i = 0; i <= data.length; i++) {
         for (var j = 0; j < data.length; j++) {
           if (data[j] > 0) {
@@ -97,7 +103,7 @@ angular.module('app', [])
         if (countbook === 2) {
           console.log('20')
           $scope.discount += 20
-        }  else if (countbook === 3) {
+        } else if (countbook === 3) {
           $scope.discount += 60
           console.log('60')
         } else if (countbook === 4) {
