@@ -133,7 +133,7 @@ angular.module('app', [])
       }
       console.log('discount' + $scope.discount)
       console.log('amount' + $scope.amount)
-    }a
+    }
 
     $scope.check = function (list) {
       for (var n = 0; n < $scope.booksList.length; n++) {
