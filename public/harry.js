@@ -79,6 +79,13 @@ angular.module('app', [])
       }
       $scope.cal()
     }
+    $scope.remove = function (index) {
+      $scope.booksList = []
+      $scope.amount = []
+      check = 0
+      $scope.total = 0
+      $scope.discount = 0
+    }
 
     $scope.cal = function () {
       // if ($scope.booksList.length > 0) {
@@ -128,9 +135,9 @@ angular.module('app', [])
       console.log('amount' + $scope.amount)
     }
 
-    $scope.check = function (data) {
+    $scope.check = function (list) {
       for (var n = 0; n < $scope.booksList.length; n++) {
-        if (data.name === $scope.booksList[n].name) {
+        if (list.name === $scope.booksList[n].name) {
           check = n
           return true
         }
