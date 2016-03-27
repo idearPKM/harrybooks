@@ -21,7 +21,7 @@ body {
 	font-weight: 500;
 	font-size: 1.05em;
 	font-family: 'Raleway', Arial, sans-serif;
-}
+	}
 .size{
 	width : auto;
 	height: 200px;
@@ -31,7 +31,7 @@ body {
 a {
 	outline: none;
 	color: #96bbe5;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 a:hover, a:focus,
@@ -360,4 +360,17 @@ a:hover, a:focus,
 		display: none;
 	}
 
+}
+
+
+img {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+
+}
+
+img:active {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+		transition-delay: 0s, 0s, 2s;
 }

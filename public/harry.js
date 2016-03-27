@@ -55,7 +55,7 @@ angular.module('app', [])
 
     $scope.booksList = []
     $scope.amount = []
-    var check = 0
+    //var check = 0
     $scope.total = 0
     $scope.discount = 0
 
@@ -65,9 +65,9 @@ angular.module('app', [])
       } else {
         $scope.booksList.push(list)
       }
-      $scope.booksList.sort()
       $scope.cal()
-      console.log($scope.booksList)
+      console.log('booksList' + $scope.booksList)
+      console.log('check' + check)
     }
 
     $scope.del = function (index) {
@@ -77,7 +77,6 @@ angular.module('app', [])
       } else {
         $scope.booksList.splice(index, 1)
       }
-      $scope.booksList.sort()
       $scope.cal()
     }
 
@@ -128,15 +127,11 @@ angular.module('app', [])
       console.log('discount' + $scope.discount)
       console.log('amount' + $scope.amount)
     }
-    // $scope.booksList.sort(function (a, b) { // เรียงค่ามาก > น้อย
-    //   if (a.amount > b.amount) return -1
-    //   if (a.amount < b.amount) return 1
-    //   return 0
-    // })
-    $scope.check = function (list) {
+
+    $scope.check = function (data) {
       for (var n = 0; n < $scope.booksList.length; n++) {
-        if (list.name === $scope.booksList[n].name) {
-          check = n
+        if (data.name === $scope.booksList[n].name) {
+          var check = n
           return true
         }
       }
