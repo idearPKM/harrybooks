@@ -55,7 +55,7 @@ angular.module('app', [])
 
     $scope.booksList = []
     $scope.amount = []
-    //var check = 0
+    var check = 0
     $scope.total = 0
     $scope.discount = 0
 
@@ -131,7 +131,7 @@ angular.module('app', [])
     $scope.check = function (data) {
       for (var n = 0; n < $scope.booksList.length; n++) {
         if (data.name === $scope.booksList[n].name) {
-          var check = n
+          check = n
           return true
         }
       }
