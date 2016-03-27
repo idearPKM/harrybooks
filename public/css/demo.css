@@ -60,6 +60,7 @@ a:hover, a:focus,
 
 .container {
 	margin: 0 auto;
+	padding-bottom: 10px;
 	min-height: calc(100vh + (4 * 70px));
 	text-align: center;
 }

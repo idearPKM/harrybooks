@@ -48,15 +48,18 @@
 								    </tfoot>
 								    <tbody ng-repeat ="list in booksList track by $index">
 										<tr><td>{{list.name}}</td><td>{{list.amount}}</td><td>{{list.price*list.amount}} ฿ </td>
-                      <td><button ng-click ="del($index)" type="button"> del </button></td></tr>
+                      <td><button ng-click ="del($index)" type="button"> <img src="http://plainicon.com/dboard/userprod/2728_f69a3/prod_thumb/plainicon.com-54420-512px-a3f.png" width="15px"/> </button></td></tr>
 									</tbody>
 								</table><!-- /checkout__summary -->
 								<button class="checkout__option checkout__option--silent checkout__cancel"><i class="fa fa-angle-left"></i> Continue Shopping</button><button class="checkout__option">Buy</button>
-                <button ng-click ="remove()" class="checkout__option">clear</button>
+                <button ng-click ="remove()" class="checkout__option">Clear</button>
 								<button class="checkout__close checkout__cancel"><i class="icon fa fa-fw fa-close"></i>Close</button>
 							</div><!-- /checkout__order-inner -->
 						</div><!-- /checkout__order -->
 					</div><!-- /checkout -->
+          <div>
+            <img src="http://www.iconsfind.com/wp-content/uploads/2015/11/20151116_564931cb68cc2.png" width="18px"/>
+            คลิกที่หนังสือเพื่อทำการเพิ่มลงตระกร้า<br></div>
 					<div class="dummy-grid dummy-grid--filled">
 						<div id="b1" ng-click ="add(book[0])"><img src="img/hr1.jpg" class="size" ></div>
 						<div id="b2" ng-click ="add(book[1])"><img src="img/hr2.jpg" class="size" ></div>
