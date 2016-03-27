@@ -14,4 +14,4 @@ test
 
 Heroku
 ==================
-[I'm an inline-style link](http://idearpkm.herokuapp.com/)
+[link to heroku](http://idearpkm.herokuapp.com/)
