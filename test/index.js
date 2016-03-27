@@ -142,7 +142,7 @@ describe('TEST program Harry Potter Book', function () {
         })
       case6.should.equal('220')
     })
-    it('ซื้อทุกเล่ม --> 1 เล่ม ส่วนลดเท่ากับ 60', function * () {
+    it('ซื้อทุกเล่ม --> 1 เล่ม ส่วนลดเท่ากับ 420', function * () {
       var case7 = yield nightmare
         .goto('http://localhost:5000')
         .wait(2000)
@@ -163,7 +163,7 @@ describe('TEST program Harry Potter Book', function () {
           this.price = document.querySelector('#discountTotal').innerHTML
           return this.price
         })
-      case7.should.equal('60')
+      case7.should.equal('420')
     })
   })
 })
